@@ -15,9 +15,8 @@ ui = function(id){
 }
 
 #' @export
-server = function(id){
+server = function(id,data){
     moduleServer(id, function(input, output, session) {
-        data = reactive(fetch_data())
         output$table = renderReactable(
             table(data())
         )

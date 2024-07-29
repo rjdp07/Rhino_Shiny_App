@@ -2,3 +2,6 @@
 library(rhino)
 library(reactable)
 library(magrittr)
+library(tidyr)
+library(dplyr)
+library(echarts4r)
